@@ -14,7 +14,13 @@ if (isset($_GET['action'])) {
             home();
             break;
         case 'login':
-            login();
+            login($_POST);
+            break;
+        case 'registry' :
+            register($_POST);
+            break;
+        case 'logout' :
+            deconnect();
             break;
         case 'error':
             error();

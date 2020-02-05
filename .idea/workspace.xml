@@ -23,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1XOIniS7i8oI3rPO3bfQZEXbQfw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -32,6 +32,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -77,6 +78,7 @@
       <workItem from="1549389792708" duration="600000" />
       <workItem from="1580910884435" duration="162000" />
       <workItem from="1580911464836" duration="2119000" />
+      <workItem from="1580931341544" duration="2857000" />
     </task>
     <servers />
   </component>
@@ -84,18 +86,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="542" y="194" key="#CLI_Interpreters" timestamp="1580911517259">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="723" y="259" key="#CLI_Interpreters" timestamp="1580931398811">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="542" y="194" key="#CLI_Interpreters/0.0.1920.1080@0.0.1920.1080" timestamp="1580911517259" />
-    <state x="679" y="104" width="566" height="872" key="#PHP" timestamp="1580911522213">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="723" y="259" key="#CLI_Interpreters/0.0.2560.1440@0.0.2560.1440" timestamp="1580931398811" />
+    <state x="905" y="139" width="566" height="872" key="#PHP" timestamp="1580931403665">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="679" y="104" width="566" height="872" key="#PHP/0.0.1920.1080@0.0.1920.1080" timestamp="1580911522213" />
-    <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580911525149">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="905" y="139" key="#PHP/0.0.2560.1440@0.0.2560.1440" timestamp="1580931403665" />
+    <state x="552" y="259" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580931406187">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580911525149" />
+    <state x="552" y="259" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1580931406187" />
     <state x="740" y="294" key="FileChooserDialogImpl" timestamp="1580911012908">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -116,13 +121,19 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1514" height="279" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580914545011" />
-    <state x="795" y="463" key="NewPhpFileDialog" timestamp="1580914468816">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="1060" y="617" key="NewPhpFileDialog" timestamp="1580931529610">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="795" y="463" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580914468816" />
-    <state x="461" y="181" key="SettingsEditor" timestamp="1580911553445">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="1060" y="617" key="NewPhpFileDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1580931529610" />
+    <state x="615" y="241" key="SettingsEditor" timestamp="1580931416671">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="461" y="181" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1580911553445" />
+    <state x="615" y="241" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1580931416671" />
+    <state x="489" y="779" key="com.intellij.ide.util.TipDialog" timestamp="1580931354963">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="489" y="779" key="com.intellij.ide.util.TipDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1580931354963" />
   </component>
 </project>
