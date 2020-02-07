@@ -5,7 +5,7 @@
  * Created  : 05.02.2019 - 18:40
  */
 session_start();
-require "model/model.php";
+require "model/userManagement.php";
 
 /**
  *function for home page

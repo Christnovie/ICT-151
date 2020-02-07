@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6b2ab00-b284-48bf-95b3-e5b3b6546a1d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controler/controler.php" beforeDir="false" afterPath="$PROJECT_DIR$/controler/controler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="f6b2ab00-b284-48bf-95b3-e5b3b6546a1d" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,8 +69,12 @@
       <workItem from="1549388617793" duration="44000" />
       <workItem from="1549389792708" duration="600000" />
       <workItem from="1580910884435" duration="162000" />
+<<<<<<< Updated upstream
       <workItem from="1580911464836" duration="2119000" />
       <workItem from="1580931341544" duration="2857000" />
+=======
+      <workItem from="1580911464836" duration="2161000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
@@ -105,24 +101,30 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="294" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1580911012908" />
-    <state width="1514" height="279" key="GridCell.Tab.0.bottom" timestamp="1580914545011">
+    <state width="1514" height="279" key="GridCell.Tab.0.bottom" timestamp="1580914858149">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1514" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580914545011" />
-    <state width="1514" height="279" key="GridCell.Tab.0.center" timestamp="1580914545011">
+    <state width="1514" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580914858149" />
+    <state width="1514" height="279" key="GridCell.Tab.0.center" timestamp="1580914858149">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1514" height="279" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580914545011" />
-    <state width="1514" height="279" key="GridCell.Tab.0.left" timestamp="1580914545011">
+    <state width="1514" height="279" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580914858149" />
+    <state width="1514" height="279" key="GridCell.Tab.0.left" timestamp="1580914858149">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1514" height="279" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580914545011" />
-    <state width="1514" height="279" key="GridCell.Tab.0.right" timestamp="1580914545011">
+    <state width="1514" height="279" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580914858149" />
+    <state width="1514" height="279" key="GridCell.Tab.0.right" timestamp="1580914858149">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
+<<<<<<< Updated upstream
     <state width="1514" height="279" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580914545011" />
     <state x="1060" y="617" key="NewPhpFileDialog" timestamp="1580931529610">
       <screen x="0" y="0" width="2560" height="1440" />
+=======
+    <state width="1514" height="279" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580914858149" />
+    <state x="795" y="463" key="NewPhpFileDialog" timestamp="1580914468816">
+      <screen x="0" y="0" width="1920" height="1080" />
+>>>>>>> Stashed changes
     </state>
     <state x="795" y="463" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580914468816" />
     <state x="1060" y="617" key="NewPhpFileDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1580931529610" />
