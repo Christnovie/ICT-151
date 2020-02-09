@@ -52,7 +52,7 @@ function register($dataUser)
             $_GET['action'] = "login";
             $_GET['errorConfirme'] = '';
             if (creatUser($dataUser)) {
-                createItemSession($dataUser);
+
                 require "View/login.php";
             } else
                 require "View/userCreate.php";
@@ -61,7 +61,7 @@ function register($dataUser)
         require "View/userCreate.php";
 
     } else {
-        require "View/userCreate.php";
+        require "View/register.php";
 
     }
 }

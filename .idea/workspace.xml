@@ -27,7 +27,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ICT133_PHP/ICT133_PHP/Site" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -71,9 +71,14 @@
       <workItem from="1580910884435" duration="162000" />
 <<<<<<< Updated upstream
       <workItem from="1580911464836" duration="2119000" />
+<<<<<<< Updated upstream
       <workItem from="1580931341544" duration="2857000" />
 =======
       <workItem from="1580911464836" duration="2161000" />
+>>>>>>> Stashed changes
+=======
+      <workItem from="1580931341544" duration="2907000" />
+      <workItem from="1581287552105" duration="271000" />
 >>>>>>> Stashed changes
     </task>
     <servers />
@@ -97,10 +102,15 @@
     </state>
     <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580911525149" />
     <state x="552" y="259" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1580931406187" />
-    <state x="740" y="294" key="FileChooserDialogImpl" timestamp="1580911012908">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="963" y="547" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581287743329">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="963" y="547" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1581287743329" />
+    <state x="987" y="392" key="FileChooserDialogImpl" timestamp="1581287818498">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="740" y="294" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1580911012908" />
+<<<<<<< Updated upstream
     <state width="1514" height="279" key="GridCell.Tab.0.bottom" timestamp="1580914858149">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -115,10 +125,31 @@
     <state width="1514" height="279" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580914858149" />
     <state width="1514" height="279" key="GridCell.Tab.0.right" timestamp="1580914858149">
       <screen x="0" y="0" width="1920" height="1080" />
+=======
+    <state x="987" y="392" key="FileChooserDialogImpl/0.0.2560.1440@0.0.2560.1440" timestamp="1581287818498" />
+    <state width="1234" height="393" key="GridCell.Tab.0.bottom" timestamp="1580938407934">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="1514" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580914545011" />
+    <state width="1234" height="393" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1580938407934" />
+    <state width="1234" height="393" key="GridCell.Tab.0.center" timestamp="1580938407934">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="1514" height="279" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580914545011" />
+    <state width="1234" height="393" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1580938407934" />
+    <state width="1234" height="393" key="GridCell.Tab.0.left" timestamp="1580938407934">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="1514" height="279" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580914545011" />
+    <state width="1234" height="393" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1580938407934" />
+    <state width="1234" height="393" key="GridCell.Tab.0.right" timestamp="1580938407934">
+      <screen x="0" y="0" width="2560" height="1440" />
+>>>>>>> Stashed changes
     </state>
 <<<<<<< Updated upstream
     <state width="1514" height="279" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580914545011" />
-    <state x="1060" y="617" key="NewPhpFileDialog" timestamp="1580931529610">
+    <state width="1234" height="393" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1580938407934" />
+    <state x="1060" y="617" key="NewPhpFileDialog" timestamp="1581287768145">
       <screen x="0" y="0" width="2560" height="1440" />
 =======
     <state width="1514" height="279" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580914858149" />
@@ -127,7 +158,7 @@
 >>>>>>> Stashed changes
     </state>
     <state x="795" y="463" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580914468816" />
-    <state x="1060" y="617" key="NewPhpFileDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1580931529610" />
+    <state x="1060" y="617" key="NewPhpFileDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1581287768145" />
     <state x="615" y="241" key="SettingsEditor" timestamp="1580931416671">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
