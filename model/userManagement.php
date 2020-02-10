@@ -12,23 +12,35 @@
 function checklogin($password)
 {
 
+    $dbConnector = mysqlConnection();
+    $query = "SELECT userEmailAddress, userPsw, pseudo FROM user ; ";
+    $statment = $dbConnector->prepare($query);//prepare query
+    $statment->execute();//execute query
+    $queryResult = $statment->fetchAll();//prepare result for client
+    foreach ($queryResult as $item) {
+        if (($password['inputUsername'] == $item->pseudo || $password['inputUsername'] == $item->userEmailAddress)) {
+            if ($password['pwd'] == $item->userPsw)
+                return true;
+            else
+                return false;
+        }
+    }
 
 
+    $dbConnector = null;//close database connexion
 }
-function mysqlConnection(){
-    $severName = "localhost";
-    $password = "2001Chris";
-    $pseudo = "root";
-    $hostname = "localhost";
-    $dbports = "50000";
-    $sql_driver = "MySql";
-    $connect = $sql_driver.': host='.$hostname.';port='.$dbports;
-    $dbConnector = new PDO($connect,$hostname,$password);
 
-    try{
-        $tempDbConnection = new PDO($dbConnector, $pseudo, $password);
-    }
-    catch (PDOException $exception) {
-        echo 'Connection failed: ' . $exception->getMessage();
-    }
+function mysqlConnection()
+{
+    $severName = "localhost";
+    $password = "2001C.star";
+    $pseudo = "root";
+    $hostname = "127.0.0.0";
+    $dbports = "50000";
+    $sql_driver = "mysql";
+    $connect = $sql_driver . ':host='. $hostname.';port='.$dbports;
+    $dbConnector = new PDO('mysql:host='.$hostname.';port='.$dbports,$pseudo, $password);
+
+
+    return $dbConnector;
 }

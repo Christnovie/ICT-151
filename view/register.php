@@ -10,7 +10,7 @@
  */
 /** tampon de fliux stocké en mémoire */
 ob_start();
-$titre = "Rent a show - Acceuil";
+$titre = "register";
 ?>
     <div>
         <h1>Register</h1><br>
@@ -37,6 +37,6 @@ $titre = "Rent a show - Acceuil";
 
 
 
-$content = ob_get_clean();
+$contenu = ob_get_clean();
 require 'gabarit.php';
 ?>

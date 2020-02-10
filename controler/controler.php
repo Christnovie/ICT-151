@@ -24,14 +24,17 @@ function login($loginregister)
 
     $_GET['action'] = "login";
     if (!isset($_SESSION['login']) || $_SESSION['login'] == "") {
-        if (checklogin($loginregister)) {
+        if(isset($loginregister['inputUsername'])) {
+            if (checklogin($loginregister)) {
 
-            $_SESSION['login'] = $_POST['inputUsername'];
-            $_SESSION['userEmail'] = $_GET['userEmail'];
-            $_GET['action'] = "resultLogin";
-            require "View/resultLogin.php";
-        } else
-            require "View/login.php";
+                $_SESSION['login'] = $_POST['inputUsername'];
+                $_SESSION['userEmail'] = $_GET['userEmail'];
+                $_GET['action'] = "resultLogin";
+                require "View/resultLogin.php";
+            } else
+                require "View/login.php";
+        }else
+            require  "View/login.php";
     } else {
         require "View/resultLogin.php";
     }
@@ -55,10 +58,10 @@ function register($dataUser)
 
                 require "View/login.php";
             } else
-                require "View/userCreate.php";
+                require "View/register.php";
         } else
             $_GET['errorConfirme'] = 'password no match';
-        require "View/userCreate.php";
+        require "View/register.php";
 
     } else {
         require "View/register.php";
