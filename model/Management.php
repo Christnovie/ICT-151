@@ -11,20 +11,15 @@
 
 function rats($password)
 {
-
+    $username = $password['inputUsername'];
+    $passwords = $password['pwd'];
     $dbConnector = mysqlConnection();
-    $query = "SELECT userEmailAddress, userPsw, pseudo FROM user ; ";
+    $query = "SELECT  userPsw  FROM users 
+                        where  snows.userEmailAddress = '$username' or snows.pseudo = '$passwords'; ";
     $statment = $dbConnector->prepare($query);//prepare query
     $statment->execute();//execute query
     $queryResult = $statment->fetchAll();//prepare result for client
-    foreach ($queryResult as $item) {
-        if (($password['inputUsername'] == $item->pseudo || $password['inputUsername'] == $item->userEmailAddress)) {
-            if ($password['pwd'] == $item->userPsw)
-                return true;
-            else
-                return false;
-        }
-    }
+
 
 
     $dbConnector = null;//close database connexion
@@ -32,26 +27,33 @@ function rats($password)
 
 function mysqlConnection()
 {
-    $severName = "localhost";
-    $password = "2001C.star";
-    $pseudo = "root";
-    $hostname = "127.0.0.0";
-    $dbports = "50000";
-    $sql_driver = "mysql";
-    $connect = $sql_driver . ':host='. $hostname.';port='.$dbports;
-    $dbConnector = new PDO('mysql:host='.$hostname.';port='.$dbports,$pseudo, $password);
+    $tempDbConnexion = null;
+    $sqlDriver = 'mysql';
+    $hostname = 'localhost';
+    $port = 50000;
+    $charset = 'utf8';
+    $dbName = 'snows';
+    $userName = 'root';
+    $userPwd = '2001Chris';
+    $dsn = $sqlDriver . ':host=' . $hostname . ';dbname=' . $dbName . ';port=' . $port . ';charset=' . $charset;
 
+    try{
+        $tempDbConnexion = new PDO($dsn, $userName, $userPwd);
+    }
+    catch (PDOException $exception) {
+        echo 'Connection failed: ' . $exception->getMessage();
+    }
+    return $tempDbConnexion;
 
-    return $dbConnector;
 }
 function dbConnector( ){
     $dbName = "localhost";
     $password = "2001C.star";
     $pseudo = "root";
     $hostname = "localhost";
-    $dbports = "50000";
-    $sql_driver = "mysql";
-    $connect = $sql_driver . ':host='. $hostname.';port='.$dbports;
+    $dbports = 50000;
+
+
    $result =  new PDO('mysql:host='.$hostname.';port='.$dbports.';dbname='.$dbName,$pseudo, $password);
 return $result;
 }

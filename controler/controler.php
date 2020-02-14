@@ -6,7 +6,7 @@
  */
 session_start();
 require "model/userManagement.php";
-
+require "model/Management.php";
 /**
  *function for home page
  */
@@ -25,7 +25,7 @@ function login($loginregister)
     $_GET['action'] = "login";
     if (!isset($_SESSION['login']) || $_SESSION['login'] == "") {
         if(isset($loginregister['inputUsername'])) {
-            if (checkin($loginregister)) {
+            if (rats($loginregister)) {
 
                 $_SESSION['login'] = $_POST['inputUsername'];
                 $_SESSION['userEmail'] = $_GET['userEmail'];

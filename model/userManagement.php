@@ -13,6 +13,7 @@
 function checkin($inputdata){
     $query = "SELECT userEmailAddress, userPsw, pseudo FROM user;";
     $result = execute_query($query);
+
 }
 function execute_query($requete){
     try {
@@ -20,7 +21,7 @@ function execute_query($requete){
     }catch ( PDOException $exception){
          echo "Connection echouer de la base de donner".$exception->getMessage();
     }
-    
+
 
 
 }
