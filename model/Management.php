@@ -23,7 +23,7 @@ function rats($password)
 
 
     $dbConnector = null;//close database connexion
-}
+ }
 
 function mysqlConnection()
 {
