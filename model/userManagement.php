@@ -12,14 +12,19 @@
  * @return bool
  */
 function checkin($inputdata){
-    require "model/Management";
+
     $username = $inputdata['inputUsername'];
     $passwords = $inputdata['pwd'];
     $query = "SELECT  userPsw  FROM users 
-                        where  snows.userEmailAddress = '$username' or snows.pseudo = '$passwords'; ";
-    $result = execute_query($query);
+                        where  snows.userEmailAddress = '$username' or snows.pseudo = '$username'; ";
+    $result = ExecuteQuery($query);
     if(isset($result)){
-        return true;
+        if($result == $passwords){
+            return true;
+        }else{
+            return false;
+        }
+
     }{
         return false;
     }

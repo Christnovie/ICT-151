@@ -8,7 +8,7 @@
  */
 // Tampon de flux stocké en mémoire
 ob_start();
-$titre = "erreur";
+$titre = "Login";
 ?>
     <div>
         <h1>Login</h1><br>

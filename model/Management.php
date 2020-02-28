@@ -30,6 +30,9 @@ function ExecuteQuery($query)
     return $queryResult;
  }
 
+/**
+ * @return PDO|null
+ */
 function mysqlConnection()
 {
     $tempDbConnexion = null;
@@ -50,15 +53,4 @@ function mysqlConnection()
     }
     return $tempDbConnexion;
 
-}
-function dbConnector( ){
-    $dbName = "localhost";
-    $password = "2001C.star";
-    $pseudo = "root";
-    $hostname = "localhost";
-    $dbports = 50000;
-
-
-   $result =  new PDO('mysql:host='.$hostname.';port='.$dbports.';dbname='.$dbName,$pseudo, $password);
-return $result;
 }
