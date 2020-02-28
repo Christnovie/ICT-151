@@ -25,7 +25,7 @@ function login($loginregister)
     $_GET['action'] = "login";
     if (!isset($_SESSION['login']) || $_SESSION['login'] == "") {
         if(isset($loginregister['inputUsername'])) {
-            if (rats($loginregister)) {
+            if (checkin($loginregister)) {
 
                 $_SESSION['login'] = $_POST['inputUsername'];
                 $_SESSION['userEmail'] = $_GET['userEmail'];

@@ -7,15 +7,19 @@
  * Last update :    [01.12.2018 author]
  *                  [add $logName in function setFullPath]
  * Git source  :    [link]
+ *
  */
 
-function rats($password)
+ /**
+ * @param $query
+ * @return array
+ */
+
+function ExecuteQuery($query)
 {
-    $username = $password['inputUsername'];
-    $passwords = $password['pwd'];
+
     $dbConnector = mysqlConnection();
-    $query = "SELECT  userPsw  FROM users 
-                        where  snows.userEmailAddress = '$username' or snows.pseudo = '$passwords'; ";
+
     $statment = $dbConnector->prepare($query);//prepare query
     $statment->execute();//execute query
     $queryResult = $statment->fetchAll();//prepare result for client
@@ -23,6 +27,7 @@ function rats($password)
 
 
     $dbConnector = null;//close database connexion
+    return $queryResult;
  }
 
 function mysqlConnection()

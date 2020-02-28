@@ -9,19 +9,18 @@
  */
 /**
  * @param $inputdata
+ * @return bool
  */
 function checkin($inputdata){
-    $query = "SELECT userEmailAddress, userPsw, pseudo FROM user;";
+    require "model/Management";
+    $username = $inputdata['inputUsername'];
+    $passwords = $inputdata['pwd'];
+    $query = "SELECT  userPsw  FROM users 
+                        where  snows.userEmailAddress = '$username' or snows.pseudo = '$passwords'; ";
     $result = execute_query($query);
-
-}
-function execute_query($requete){
-    try {
-        $result = dbConnector();
-    }catch ( PDOException $exception){
-         echo "Connection echouer de la base de donner".$exception->getMessage();
+    if(isset($result)){
+        return true;
+    }{
+        return false;
     }
-
-
-
 }
