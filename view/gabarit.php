@@ -73,6 +73,8 @@
               <ul class="nav nav-pills ddmenu">
                   <li><a href="index.php?action=home">Home</a></li>
                   <li><a href="index.php?action=login">Login</a></li>
+                  <li><a href="index.php?action=logout">logout</a></li>
+                  <li><a href="index.php?action=produit">Produit</a></li>
               </ul>
             </div>
           </div>

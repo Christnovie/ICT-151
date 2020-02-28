@@ -22,6 +22,9 @@ if (isset($_GET['action'])) {
         case 'logout' :
             deconnect();
             break;
+        case 'produit' :
+            produit();
+            break;
         case 'error':
             error();
             break;

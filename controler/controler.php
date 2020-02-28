@@ -7,6 +7,7 @@
 session_start();
 require "model/userManagement.php";
 require "model/Management.php";
+require "model/productManagement.php";
 /**
  *function for home page
  */
@@ -58,6 +59,7 @@ function register($dataUser)
 
                 require "View/login.php";
             } else
+                $_GET['errorConfirme'] = 'Username or email is already taken';
                 require "View/register.php";
         } else
             $_GET['errorConfirme'] = 'password no match';
@@ -87,4 +89,15 @@ function deconnect()
     session_unset();
     session_destroy();
     require "View/login.php";
+}
+
+/**
+ *for show snow
+ */
+function produit(){
+    $_GET['action'] = "produit";
+
+    $produitContent = snowsDatabase();
+    $_GET['prContent'] = $produitContent;
+    require "View/produit.php";
 }
