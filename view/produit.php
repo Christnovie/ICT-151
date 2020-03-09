@@ -8,7 +8,7 @@
  */
 /** tampon de fliux stocké en mémoire */
 ob_start();
-$titre = "Rent a show - Acceuil";
+$titre = "Rent a show - Store";
 if(isset($_SESSION['login']))
     $itemAcces = "additem";
 else
@@ -45,16 +45,20 @@ $index = 0;
 
                                         <li class="span3">
                                             <div class="thumbnail">
-                                                <a href="<?='index.php?action='.$itemAcces.'&element='.$item['brand'].' '.$item['model']?>" name="<?= $item->code?>"><img src="<?= $item['photo']?>" alt="Thumbnail Placeholder" title="Thumbnail Placeholder" /></a>
+                                                <a href="<?='index.php?action='.$itemAcces.'&element='.$item['code'].' '.$item['brand']?>" name="<?= $item->code?>"><img src="<?= $item['photo']?>" alt="Thumbnail Placeholder" title="Thumbnail Placeholder" /></a>
                                                 <div class="caption">
-                                                    <h3> <?= $item['brand'] ?><br> </h3>
-                                                    <p> <?= $item['model'] ?></p>
-                                                    <textarea id="story" name="story"
-                                                              rows="5" >
+                                                    <h3> <?= $item['code'] ?><br> </h3>
+                                                    <p> <strong>Marque :</strong> <?= ' '.$item['brand'] ?></p>
+                                                    <p> <strong>Model :</strong> <?=' '.$item['model'] ?></p>
+                                                    <p> <strong>Longueur : </strong> <?= $item['snowLength'] ?> cm</p>
+                                                    <p><strong>Price :</strong> <?=' '.$item['dailyPrice'] ?>.- par jour</p>
+                                                    <p> <strong>Quantité : </strong> <?= $item['qtyAvailable'] ?></p>
+                                                    <textarea id="story" style="width: 95%"  name="story"
+                                                              rows="4"  >
                                                             <?= $item['description'] ?>
                                                         </textarea>
 
-                                                    <p><a href="<?='index.php?action='.$itemAcces.'&element='.$item->brand.' '.$item->model?>" class="btn btn-primary">Buy</a></p>
+                                                    <p><a href="<?='index.php?action='.$itemAcces.'&element='.$item->brand.' '.$item->model?>" class="btn btn-primary transparent-bg">Buy</a></p>
                                                 </div>
                                             </div>
                                         </li>

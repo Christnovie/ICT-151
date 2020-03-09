@@ -71,10 +71,30 @@
             </button>
             <div class="nav-collapse collapse">
               <ul class="nav nav-pills ddmenu">
-                  <li><a href="index.php?action=home">Home</a></li>
-                  <li><a href="index.php?action=login">Login</a></li>
-                  <li><a href="index.php?action=logout">logout</a></li>
-                  <li><a href="index.php?action=produit">Produit</a></li>
+                  <li<?php if (($_GET['action'] == 'home') || (!isset($_GET['action']))) : ?>
+                          class="active"
+                  <?php endif ?>>
+                  <a href="index.php?action=home">Home</a></li>
+                  <li<?php if (($_GET['action'] == 'login') || ($_GET['action'] == 'resultLogin') || (!isset($_GET['action']))): ?>
+                      class="active"
+                  <?php endif ?>>
+                  <a href="index.php?action=login">Login</a></li>
+                  <li<?php if ($_GET['action'] == 'resultLogin' || ($_SESSION['login']) != ""): ?>
+                      style="display: "
+                  <?php else : ?>
+                      style="display: none "
+                  <?php endif ?>
+                      <?php if ($_GET['action'] == 'item' )  : $toggle = "Autre";  ?>
+
+                          class="active"
+                      <?php else : $toggle = "Autre" ?>
+
+                      <?php endif ?>>
+                  <a href="index.php?action=logout">logout</a></li>
+                  <li <?php if (($_GET['action'] == 'produit') || (!isset($_GET['action']))): ?>
+                          class="active"
+                  <?php endif ?>>
+                  <a href="index.php?action=produit">Produit</a></li>
               </ul>
             </div>
           </div>

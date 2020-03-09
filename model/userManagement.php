@@ -23,7 +23,7 @@ function checkin($inputdata){
     }
 
     if(isset($pwdResult)){
-        if($pwdResult == $passwords){
+        if(password_verify($passwords,$pwdResult)){
             return true;
         }else{
             return false;
@@ -43,18 +43,18 @@ function creatUser($userData)
 {
 
     $pseudo = $userData['createUser'];
-    $password = $userData['createpwd'];
+    $password = password_hash( $userData['createpwd'],PASSWORD_DEFAULT);
     $email = $userData['createEmail'];
     $query = "SELECT users.userEmailAddress,users.pseudo  FROM users where  users.userEmailAddress = '$email' or users.pseudo = '$pseudo'; ";
     $result = ExecuteQuery($query);
-    /** @var TYPE_NAME $item */
-    foreach ($result as $item) {
-        if (!isset($item)) {
-            $query = "INSERT INTO users ( userEmailAddress, userPsw, pseudo) VALUES( '$email', '$password', '$pseudo');";
-            $result = ExecuteQuery($query);
-            return true;
-        }
-        return false;
+    foreach ($result as $item){
+        $verif = $item;
     }
-
+    if(!isset($verif)){
+        $query = "INSERT INTO users ( userEmailAddress, userPsw, pseudo) VALUES( '$email', '$password', '$pseudo');";
+        $result = ExecuteQuery($query);
+        return true;
+    }else {
+            return false;
+    }
 }
