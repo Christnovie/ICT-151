@@ -8,6 +8,7 @@
  */
 require "controler/controler.php";
 if (isset($_GET['action'])) {
+    $itemPanier = $_GET['element'];
     $action = $_GET['action'];
     switch ($action) {
         case 'home':
@@ -24,6 +25,9 @@ if (isset($_GET['action'])) {
             break;
         case 'produit' :
             produit();
+            break;
+        case 'addItem' :
+            addItem($itemPanier);
             break;
         case 'error':
             error();

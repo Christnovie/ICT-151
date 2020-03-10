@@ -43,6 +43,14 @@ function login($loginregister)
 }
 
 /**
+ *function for add item in basket
+ * @param $item
+ */
+function addItem($item){
+    $_SESSION['panier'] = $_SESSION['panier'] + $item;
+
+}
+/**
  *function for create user
  * @param $dataUser
  */

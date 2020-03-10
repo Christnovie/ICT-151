@@ -231,7 +231,15 @@
 <script src="view/content/scripts/jquery.min.js" type="text/javascript"></script>
 <script src="view/content/scripts/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="view/content/scripts/default.js" type="text/javascript"></script>
+    <!-- Bootstrap core JavaScript -->
 
+
+    <!-- Contact form JavaScript -->
+    <script src="view/content/scripts/js/jqBootstrapValidation.js"></script>
+
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
 
 <script src="view/content/scripts/carousel/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script><script type="text/javascript">$('#list_photos').carouFredSel({ responsive: true, width: '100%', scroll: 2, items: {width: 320,visible: {min: 2, max: 6}} });</script><script src="view/content/scripts/camera/scripts/camera.min.js" type="text/javascript"></script>
 <script src="view/content/scripts/easing/jquery.easing.1.3.js" type="text/javascript"></script>

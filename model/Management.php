@@ -42,7 +42,7 @@ function mysqlConnection()
     $charset = 'utf8';
     $dbName = 'snows';
     $userName = 'root';
-    $userPwd = '2001C.star';
+    $userPwd = '2001Chris';
     $dsn = $sqlDriver . ':host=' . $hostname . ';dbname=' . $dbName . ';port=' . $port . ';charset=' . $charset;
 
     try{

@@ -694,7 +694,7 @@ a.btn-info, a.btn-success, a.btn-warning, a.btn-danger, a.btn-inverse {
 }
 
 .btn-secondary:hover, .btn-secondary:active, .btn-secondary.active, .btn-secondary.disabled, .btn-secondary[disabled] {
-    background-color: #df23a4;
+    background-color: #dfdc1d;
 }
 
 .btn-primary, .btn-primary:hover, a.btn-primary, a.btn-primary:hover {
@@ -718,7 +718,7 @@ a.btn-info, a.btn-success, a.btn-warning, a.btn-danger, a.btn-inverse {
 
 /*#ca5603 par 667c8c*/
 .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
-    background-color: #d3385f;
+    background-color: #d3a62e;
 }
 
 #divHeaderText {
@@ -816,7 +816,7 @@ h6, .page-content h6 a {
 
 .navbar .dropdown-menu li > a:hover, .navbar .dropdown-menu .active > a, .navbar .dropdown-menu .active > a:hover, .dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a, .navbar .nav-pills .open a.dropdown-toggle:hover {
     filter: none;
-    color: rgb(255, 64, 128);
+    color: rgb(255, 241, 47);
 
     background-image: none
 }
@@ -827,12 +827,12 @@ h6, .page-content h6 a {
     padding: 10px 30px;
     border-radius: 5px;
     color: rgb(41, 41, 41);
-    background-color: rgb(240, 240, 240)
+    background-color: rgb(228, 231, 240)
 }
 
 .navbar .nav-pills > li > a:hover, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-    color: rgb(255, 255, 255);
-    background-color: #e05f03
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to bottom right, rgba(255, 229, 2,0.7) 20%, rgba(255, 6, 0,0.7) 50%, rgba(0, 4, 255, 0.7) 100%);
 }
 
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle {
@@ -841,7 +841,7 @@ h6, .page-content h6 a {
 
 .navbar .nav-pills > .active > a, .navbar .nav-pills > .active > a:hover, .navbar .nav-pills li.dropdown.open > .dropdown-toggle, .navbar .nav-pills li.dropdown.active > .dropdown-toggle {
     color: rgb(255, 255, 255);
-    background-color: rgb(219, 53, 82);
+    background: linear-gradient(to bottom right, rgba(255, 229, 2,0.7) 20%, rgba(255, 6, 0,0.7) 50%, rgba(0, 1, 255, 0.7) 100%);
 }
 
 .navbar .ddmenu {
