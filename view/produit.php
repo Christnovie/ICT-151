@@ -58,7 +58,7 @@ $index = 0;
                                                             <?= $item['description'] ?>
                                                         </textarea>
 
-                                                    <p><a href="<?='index.php?action='.$itemAcces.'&element='.$item?>" class="btn btn-primary transparent-bg">Buy</a></p>
+                                                    <p><a href="<?='index.php?action='.$itemAcces.'&element='.$item?>" class="btn btn-primary transparent-bg">Ajouter</a></p>
                                                 </div>
                                             </div>
                                         </li>
@@ -85,11 +85,6 @@ $index = 0;
     <div class="portfolio-modal modal fade" id="portofolio" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
         <div class="modal-dialog" >
             <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
@@ -97,7 +92,7 @@ $index = 0;
                                 <!-- Project Details Go Here -->
                                 <h2 class="text-uppercase"><?=$article['code'] ?></h2>
 
-                                <img class="img-fluid d-block mx-auto" style="float: left" src="view/content/images/<?=$article['code'] ?>.jpg" alt="">
+                                <img class="img-fluid d-block mx-auto" style="float:inside;width: 80% " src="view/content/images/<?=$article['code'] ?>.jpg" alt="">
                                 <p><?= $article['description']?></p>
                                 <ul class="list-inline">
                                     <li> <strong>Marque :</strong> <?= ' '.$article['brand'] ?></li>

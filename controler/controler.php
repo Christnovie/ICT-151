@@ -96,7 +96,7 @@ function deconnect()
     $_SESSION['login'] = "";
     session_unset();
     session_destroy();
-    require "View/login.php";
+    require "view/login.php";
 }
 
 /**
@@ -107,5 +107,16 @@ function produit(){
 
     $produitContent = snowsDatabase();
     $_GET['prContent'] = $produitContent;
-    require "View/produit.php";
+    if($_SESSION['admin']==1)
+        require "view/prVente.php";
+    else
+        require "view/produit.php";
+
+}
+function newItem($newitem){
+    if(!isset($newitem['name'])){
+        require "view/newItem.php";
+    }else{
+        require "view/produit.php";
+    }
 }

@@ -23,8 +23,6 @@ $titre = "register";
             <input type="password" id="createpwds" name="createpwd" placeholder="Enter new password" value="" minlength="8"   required>
             <label>Confirme password</label>
             <input type="password" id="confirmepwds" name="confirmepwd" placeholder="Enter password" value="" minlength="8"  required>
-            <label>User Admin ?</label>
-            <input type="checkbox" id="chkAdmin" name="chk_admin"   >
             <br>
             <button type="submit" id="registered" name="register">Register </button><input type="reset" value="Reset"><br>
             Déjà membre?          <a href="index.php?action=login">Login </a>

@@ -32,6 +32,9 @@ if (isset($_GET['action'])) {
         case 'error':
             error();
             break;
+        case 'newItem' :
+            newItem($_POST);
+            break;
 
     }
 }else{

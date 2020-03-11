@@ -16,14 +16,16 @@ function checkin($inputdata){
 
     $username = $inputdata['inputUsername'];
     $passwords = $inputdata['pwd'];
-    $query = "SELECT  userPsw  FROM users where  users.userEmailAddress = '$username' or users.pseudo = '$username'; ";
+    $query = "SELECT  userPsw,admin  FROM users where  users.userEmailAddress = '$username' or users.pseudo = '$username'; ";
     $result = ExecuteQuery($query);
     foreach ($result as $item){
         $pwdResult = $item[0];
+        $_SESSION['admin']= $item[1];
     }
 
     if(isset($pwdResult)){
         if(password_verify($passwords,$pwdResult)){
+
             return true;
         }else{
             return false;
@@ -53,6 +55,7 @@ function creatUser($userData)
     if(!isset($verif)){
         $query = "INSERT INTO users ( userEmailAddress, userPsw, pseudo) VALUES( '$email', '$password', '$pseudo');";
         $result = ExecuteQuery($query);
+
         return true;
     }else {
             return false;
