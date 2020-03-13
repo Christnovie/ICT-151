@@ -10,23 +10,38 @@ $titre = "register";
 ?>
     <div>
         <h1>Register</h1><br>
-        <form action="index.php?action=registry" id="formulaireRegister" name="formRegister"  method="post">
+        <form action="index.php?action=" id="formulaireNewItem" name="formRegister"  method="post">
+            <label>image</label>
+            <img name="ImageUpload" src="">
+            <input type="file" id="" name="newImage"   placeholder="import" value=""  required><br>
             <label>Name</label>
-            <input type="image" id="" name="createUser"   placeholder="import" value=""  required><br>
-            <label>Name</label>
-            <input type="text" id="" name="createUser"   placeholder="input your username" value=""  required><br>
+            <input type="text" id="" name="newName"   placeholder="input name" value=""  required><br>
             <label>Marque</label>
-            <input type="text" id="" name="createEmail"   placeholder="input your email" value=""  required><br>
-            <label>Password</label>
-            <input type="password" id="createpwds" name="createpwd" placeholder="Enter new password" value="" minlength="8"   required>
-            <label>Confirme password</label>
-            <input type="password" id="confirmepwds" name="confirmepwd" placeholder="Enter password" value="" minlength="8"  required>
-            <br>
-            <button type="submit" id="registered" name="register">Register </button><input type="reset" value="Reset"><br>
-            Déjà membre?          <a href="index.php?action=login">Login </a>
+            <input type="text" id="" name="newMarque"   placeholder="input Brand" value=""  required><br>
+            <label>Model</label>
+            <input type="text" id="" name="newModel"   placeholder="input model" value=""  required><br>
+            <label>Taille</label>
+            <input type="number" id="" name="newLength"   placeholder="" value=100  required>cm<br>
+            <label>Quantité</label>
+            <input type="number" id="" name="newqty"   placeholder="Quantity " value=""  required><br>
+            <label>description</label>
+            <textarea name="newDescrip" required placeholder="Enter Description" ></textarea> <br>
+            <label>Prix</label>
+            <input type="text" id="" name="newPrice"   placeholder="input your email" value=""  required><br>
+            <button type="submit" id="registered" name="newItemAdd">Create</button><input type="reset" value="Reset"> <button type="submit" id="registered" name="newItemAdd"><a href="index.php?action=login">Edit </a></button>
+
         </form>
         <?php  echo $_GET['errorConfirme']?>
     </div>
+<script>
+    newImage.addEventListener('change',imageLoad);
+
+    function imageLoad() {
+        var imageData = document.getElementById('newImage');
+        var placeImg = document.getElementById('ImageUpload');
+        placeImg.src = imageData.value;
+    }
+</script>
 
 
 <?php
