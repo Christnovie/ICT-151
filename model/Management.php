@@ -37,12 +37,12 @@ function mysqlConnection()
 {
     $tempDbConnexion = null;
     $sqlDriver = 'mysql';
-    $hostname = 'localhost';
-    $port = 50000;
+    $hostname = '127.0.0.1';
+    $port = 3306;
     $charset = 'utf8';
     $dbName = 'snows';
     $userName = 'root';
-    $userPwd = '2001Chris';
+    $userPwd = 'password';
     $dsn = $sqlDriver . ':host=' . $hostname . ';dbname=' . $dbName . ';port=' . $port . ';charset=' . $charset;
 
     try{

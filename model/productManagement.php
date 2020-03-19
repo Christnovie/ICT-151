@@ -14,3 +14,11 @@ function snowsDatabase(){
     $result = ExecuteQuery($query);
     return $result;
 }
+function snowAddUpdate($snows){
+    $file = dir("view/content/images");
+    if(move_uploaded_file($snows['newImage'],$file/$snows['newName'])){
+        echo "reussi";
+    }else{
+        echo "fichier non enregistrer";
+    }
+}

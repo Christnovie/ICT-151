@@ -10,10 +10,10 @@ $titre = "register";
 ?>
     <div>
         <h1>Register</h1><br>
-        <form action="index.php?action=" id="formulaireNewItem" name="formRegister"  method="post">
+        <form action="index.php?action=newItem" id="formulaireNewItem" name="formRegister"  method="post">
             <label>image</label>
             <img name="ImageUpload" src="">
-            <input type="file" id="" name="newImage"   placeholder="import" value=""  required><br>
+            <input type="file" accept="image/*" id="" name="newImage"   placeholder="import" value=""  required><br>
             <label>Name</label>
             <input type="text" id="" name="newName"   placeholder="input name" value=""  required><br>
             <label>Marque</label>
@@ -33,15 +33,7 @@ $titre = "register";
         </form>
         <?php  echo $_GET['errorConfirme']?>
     </div>
-<script>
-    newImage.addEventListener('change',imageLoad);
 
-    function imageLoad() {
-        var imageData = document.getElementById('newImage');
-        var placeImg = document.getElementById('ImageUpload');
-        placeImg.src = imageData.value;
-    }
-</script>
 
 
 <?php

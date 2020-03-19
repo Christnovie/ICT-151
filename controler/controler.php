@@ -114,9 +114,9 @@ function produit(){
 
 }
 function newItem($newitem){
-    if(!isset($newitem['name'])){
+    if(!isset($newitem['newName'])){
         require "view/newItem.php";
     }else{
-        require "view/produit.php";
+        snowAddUpdate($newitem);
     }
 }
