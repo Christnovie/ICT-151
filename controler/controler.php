@@ -118,5 +118,6 @@ function newItem($newitem){
         require "view/newItem.php";
     }else{
         snowAddUpdate($newitem);
+        produit();
     }
 }

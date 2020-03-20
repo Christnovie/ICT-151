@@ -10,7 +10,7 @@ $titre = "register";
 ?>
     <div>
         <h1>Register</h1><br>
-        <form action="index.php?action=newItem" id="formulaireNewItem" name="formRegister"  method="post">
+        <form action="index.php?action=newItem" id="formulaireNewItem" name="formRegister" enctype="multipart/form-data" method="post">
             <label>image</label>
             <img name="ImageUpload" src="">
             <input type="file" accept="image/*" id="" name="newImage"   placeholder="import" value=""  required><br>
@@ -27,7 +27,7 @@ $titre = "register";
             <label>description</label>
             <textarea name="newDescrip" required placeholder="Enter Description" ></textarea> <br>
             <label>Prix</label>
-            <input type="text" id="" name="newPrice"   placeholder="input your email" value=""  required><br>
+            <input type="number" id="" name="newPrice"   placeholder="" value=""  required><br>
             <button type="submit" id="registered" name="newItemAdd">Create</button><input type="reset" value="Reset"> <button type="submit" id="registered" name="newItemAdd"><a href="index.php?action=login">Edit </a></button>
 
         </form>

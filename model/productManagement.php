@@ -15,10 +15,16 @@ function snowsDatabase(){
     return $result;
 }
 function snowAddUpdate($snows){
-    $file = dir("view/content/images");
-    if(move_uploaded_file($snows['newImage'],$file/$snows['newName'])){
-        echo "reussi";
+    $file = $_FILES['newImage']['name'];
+    $temp_name = $_FILES["newImage"]["tmp_name"];
+    $chemin = 'view/content/images/'.$snows['newName'].".jpg";
+    if(move_uploaded_file($temp_name,$chemin)){
+        $source = imagecreatefromjpeg($chemin);
+        imagerotate($source,90,0);
+        echo "connexion reussi";
     }else{
         echo "fichier non enregistrer";
     }
+
+
 }
