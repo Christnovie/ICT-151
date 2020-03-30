@@ -10,7 +10,7 @@
 
 
 function snowsDatabase(){
-    $query = "select * from snows.snows ";
+    $query = "select * from snows.snows where snows.snows.qtyAvailable > 0;";
     $result = ExecuteQuery($query);
     return $result;
 }
@@ -19,8 +19,11 @@ function snowAddUpdate($snows){
     $temp_name = $_FILES["newImage"]["tmp_name"];
     $chemin = 'view/content/images/'.$snows['newName'].".jpg";
     if(move_uploaded_file($temp_name,$chemin)){
-        $source = imagecreatefromjpeg($chemin);
-        imagerotate($source,90,0);
+        $filename = $chemin;
+        $degrees = 90;
+        header('Content-type: image/jpeg');
+        $source = imagecreatefromjpeg($filename);
+        imagerotate($source,$degrees,0);
         echo "connexion reussi";
     }else{
         echo "fichier non enregistrer";

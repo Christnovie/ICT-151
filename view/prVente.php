@@ -86,10 +86,10 @@ $index = 0;
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <button class="btn btn-primary">buy</button>
+                                                    <button class="btn btn-primary">acheter</button>
                                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                                         <i class="fas fa-times"></i>
-                                                        Close Project</button>
+                                                        retour</button>
                                                 </div>
                                                 <p><a href="<?='index.php?action='.$itemAcces.'&element='.$item?>" class="btn btn-primary transparent-bg">Editer</a></p>
                                             </div>

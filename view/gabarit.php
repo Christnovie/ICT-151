@@ -79,8 +79,12 @@
                           class="active"
                   <?php endif ?>>
                   <a href="index.php?action=home">Home</a></li>
-                  <li<?php if (($_GET['action'] == 'login') || ($_GET['action'] == 'resultLogin') || (!isset($_GET['action']))): ?>
+                  <li<?php if (($_GET['action'] == 'login') ||  (!isset($_GET['action']))): ?>
                       class="active"
+                  <?php else :   ?>
+                       <?php  if(($_GET['action'] == 'resultLogin') || ($_SESSION['login']) != "") : ?>
+                            style="display: none"
+                       <?php endif; ?>
                   <?php endif ?>>
                   <a href="index.php?action=login">Login</a></li>
                   <li<?php if ($_GET['action'] == 'resultLogin' || ($_SESSION['login']) != ""): ?>

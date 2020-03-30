@@ -113,6 +113,11 @@ function produit(){
         require "view/produit.php";
 
 }
+
+/**
+ * function for new item
+ * @param $newitem
+ */
 function newItem($newitem){
     if(!isset($newitem['newName'])){
         require "view/newItem.php";

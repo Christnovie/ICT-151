@@ -7,6 +7,7 @@
  *Time : 08:52
  */
 ?>
+<!--
 <html>
 <head>
     <style>
@@ -53,9 +54,27 @@
 </body>
 
 </html>
+ -->
 
 <?php
-$password = $_POST['password'];
-$hach = password_hash($password,PASSWORD_DEFAULT);
-if(isset($password))
-echo $hach;
+// Fichier et degrés de rotation
+$filename = 'D:\Wallpaper\hacker-uhd-4k-wallpaper-548x308.jpg';
+$degrees = 180;
+
+// Content type
+header('Content-type: image/jpeg');
+
+// Chargement
+$source = imagecreatefromjpeg($filename);
+
+// Rotation
+$rotate = imagerotate($source, $degrees, 0);
+
+// Affichage
+imagejpeg($rotate);
+
+// Libération de la mémoire
+imagedestroy($source);
+imagedestroy($rotate);
+?>
+
