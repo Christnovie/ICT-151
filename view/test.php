@@ -62,16 +62,16 @@ $filename = 'D:\Wallpaper\hacker-uhd-4k-wallpaper-548x308.jpg';
 $degrees = 180;
 
 // Content type
-header('Content-type: image/jpeg');
+header('Content-type: image/jpg');
 
 // Chargement
 $source = imagecreatefromjpeg($filename);
-
+imagejpeg($source);
 // Rotation
 $rotate = imagerotate($source, $degrees, 0);
 
 // Affichage
-imagejpeg($rotate);
+
 
 // Libération de la mémoire
 imagedestroy($source);

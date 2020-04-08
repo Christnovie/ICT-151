@@ -1,4 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="PhpInterpreters">
+    <interpreters>
+      <interpreter id="37b177bb-aa70-4dec-b0e3-c619026d83aa" name="PHP (project level)" home="D:\Informatique\php73\php.exe" debugger_id="php.debugger.XDebug" debugger_extension="php_xdebug.dll" />
+    </interpreters>
+  </component>
+  <component name="PhpInterpretersPhpInfoCache">
+    <phpInfoCache>
+      <interpreter name="PHP (project level)">
+        <phpinfo binary_type="PHP" php_cgi="D:\Informatique\php73\php-cgi.exe" php_cli="D:\Informatique\php73\php.exe" path_separator=";" version="7.3.9">
+          <additional_php_ini />
+          <configuration_file>D:\Informatique\php73\php.ini</configuration_file>
+          <configuration_options>
+            <configuration_option name="include_path" value=".;C:\php\pear" />
+          </configuration_options>
+          <debuggers>
+            <debugger_info debugger="xdebug" debugger_version="2.9.2">
+              <debug_extensions />
+            </debugger_info>
+          </debuggers>
+          <loaded_extensions>
+            <extension name="Core" />
+            <extension name="PDO" />
+            <extension name="Phar" />
+            <extension name="Reflection" />
+            <extension name="SPL" />
+            <extension name="SimpleXML" />
+            <extension name="bcmath" />
+            <extension name="calendar" />
+            <extension name="ctype" />
+            <extension name="date" />
+            <extension name="dom" />
+            <extension name="filter" />
+            <extension name="gd" />
+            <extension name="hash" />
+            <extension name="iconv" />
+            <extension name="json" />
+            <extension name="libxml" />
+            <extension name="mysqlnd" />
+            <extension name="pcre" />
+            <extension name="pdo_mysql" />
+            <extension name="readline" />
+            <extension name="session" />
+            <extension name="standard" />
+            <extension name="tokenizer" />
+            <extension name="wddx" />
+            <extension name="xdebug" />
+            <extension name="xml" />
+            <extension name="xmlreader" />
+            <extension name="xmlwriter" />
+            <extension name="zip" />
+            <extension name="zlib" />
+          </loaded_extensions>
+        </phpinfo>
+      </interpreter>
+    </phpInfoCache>
+  </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />
+  <component name="PhpStepFilterConfiguration">
+    <skipped_functions>
+      <skipped_function name="require" />
+      <skipped_function name="produit" />
+      <skipped_function name="newItem" />
+      <skipped_function name="mysqlConnection" />
+      <skipped_function name="ExecuteQuery" />
+      <skipped_function name="snowAddUpdate" />
+    </skipped_functions>
+  </component>
 </project>

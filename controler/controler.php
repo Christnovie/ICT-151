@@ -126,3 +126,7 @@ function newItem($newitem){
         produit();
     }
 }
+
+function updateDB($element){
+    
+}

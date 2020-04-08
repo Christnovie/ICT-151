@@ -29,6 +29,9 @@ if (isset($_GET['action'])) {
         case 'addItem' :
             addItem($itemPanier);
             break;
+        case 'update' :
+           updateDB($itemPanier);
+            break;
         case 'error':
             error();
             break;
