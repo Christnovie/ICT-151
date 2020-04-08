@@ -58,23 +58,53 @@
 
 <?php
 // Fichier et degrés de rotation
-$filename = 'D:\Wallpaper\hacker-uhd-4k-wallpaper-548x308.jpg';
-$degrees = 180;
+$filename = 'K3GE.jpg';
+$filePath = "content/images/";
+$rotaded = $filePath.'rotated_'.$filename;
+$degrees = 90;
 
 // Content type
-header('Content-type: image/jpg');
+@header('Content-type: image/jpg');
 
 // Chargement
-$source = imagecreatefromjpeg($filename);
-imagejpeg($source);
+$source = @imagecreatefromjpeg($filePath.$filename);
+@imagejpeg($source);
 // Rotation
-$rotate = imagerotate($source, $degrees, 0);
+$rotate = @imagerotate($source, $degrees, 0);
 
 // Affichage
-
+@imagejpeg($rotate,$rotaded);
 
 // Libération de la mémoire
-imagedestroy($source);
-imagedestroy($rotate);
+@imagedestroy($source);
+@imagedestroy($rotate);
+
+
+
+
+function convert_to_jpg($filename){
+
+    switch (exif_imagetype($filename))
+    {
+        case IMAGETYPE_GIF:
+            $image = imagecreatefromgif($filename);
+            break;
+        case IMAGETYPE_JPEG:
+            $image = imagecreatefromjpeg($filename); // ou return true; en fait, vu que c'est déjà du jpg
+            break;
+        case IMAGETYPE_PNG:
+            $image = imagecreatefrompng($filename);
+            break;
+        default:
+            return false;
+    }
+    image
+
+    // change la couleur transparente par du blanc
+    imagecolorset($image, imagecolortransparent($image), 255, 255, 255);
+
+    return imagejpeg($image, pathinfo($filename, PATHINFO_FILENAME) . '.jpg');
+}
 ?>
+la
 
